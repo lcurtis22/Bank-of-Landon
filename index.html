@@ -3,22 +3,45 @@
 <title>
 Bank of Landon</title>
 <style>
-box { font-family: verdana; font-size: 10pt; COLOR: gray; }
-b { font-weight: bold; }
-table { border: 1px solid gray;}
-td { text-align: center; padding: 25;}
+vfont { font-family: verdana; COLOR: gray; }
+.btn-group button {
+  background-color: #3a81f2; /* Blue background */
+  border: 1px solid Blue; /* Blue border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  font-family: verdana /* Changes font to verdana*/
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+.btn-group button:hover {
+  background-color: #326ecf; /*Adds darker blue color when hovered over*/
+}
 </style>
 </head>
 <body>
 <center>
-<br><br><br><br>
-<h1> Bank of Landon </h1
-<tr><td>this will be where I develop the fake bank</td></tr><br>
-<button type="button">Click Me!</button>
+<br>
+<h1><vfont> Bank of Landon </vfont></h1><br>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%">Login</button>
+  <button style="width:25%">Deposit</button>
+  <button style="width:25%">Check Balance</button>
+  <button style="width:25%">Transfer</button>
+</div>
+
 <hr>
-<table>
-  <tr><td><box>This is a placeholder for the subdomain <b>landon.mnjholman.com</b></box></td></tr>
-</table>
+
 <br><br>
 </center>
 </body>
