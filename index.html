@@ -3,19 +3,24 @@
 <title>
 Bank of Landon</title>
 <link rel="stylesheet" href="css/style.css">
+<script type = "text/javascript" src="js/button.js"></script>
 </head>
 <body>
 <center>
 <br>
 <h1><vfont> Bank of Landon </vfont></h1><br>
 <div class="btn-group" style="width:100%">
-  <button style="width:25%">Login</button>
-  <button style="width:25%">Deposit</button>
-  <button style="width:25%">Check Balance</button>
-  <button style="width:25%">Transfer</button>
+  <button style="width:25%" onClick="buttonChange('Login')">Login</button>
+  <button style="width:25%" onClick="buttonChange('Deposit')">Deposit</button>
+  <button style="width:25%" onClick="buttonChange('Transfer')">Transfer</button>
+  <button style="width:25%" onClick="buttonChange('Check Balance')">Check Balance</button>
 </div>
 
-<hr>
+<hr> 
+
+<h2 id = buttonText><vfont>Selected button:</vfont></h2>
+
+<script src="js/button.js"></script>
 
 <br><br>
 </center>
